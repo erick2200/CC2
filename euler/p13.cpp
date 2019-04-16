@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -8,28 +10,29 @@ int main()
     
     ifstream archivo;
     string numero,aux;
-    int suma,acareo=0;
+    int suma,acarreo=0;
     string resultado;
-    for(int i=49;i>=0 ; i++)
+    for(int i=49;i>=0 ; i--)
     {
-        suma=acareo;
+        stringstream ss;
+        suma=acarreo;
         archivo.open("p13.txt",ios::in);
         while(!archivo.eof())
         {
             getline(archivo,numero);
-            cout << numero << endl;
             aux = numero.substr(i,1);
             suma += atoi(aux.c_str());
         }
-        resultado[i+3] = to_string(int(suma%10));
+        ss << (suma%10);
+        resultado += ss.str();
+        acarreo = suma/10;
         archivo.close();   
-
-        cout << suma << endl;
     }
+    stringstream ss;
+    ss << acarreo ;
+    resultado += ss.str();
     
-    /*
-    string nose = "48469";
-    string ultimo = nose.substr(2,1);
-    cout << atoi(ultimo.c_str())<< endl;
-    */
+    for(int i=51;i>41 ;i--)
+        cout << resultado[i] ;
+    cout << endl;
 }
