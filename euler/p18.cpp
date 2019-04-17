@@ -25,7 +25,7 @@ void caminos(int x[][15],int f)
             else 
                 x[i][j] += x[i-1][j];
         }
-    cout << "\nMAXIMO:" << mayor(x[14]) << endl;
+    cout << "MAXIMO:" << mayor(x[14]) << endl;
 }
 
 int main()
