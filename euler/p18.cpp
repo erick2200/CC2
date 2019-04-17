@@ -1,16 +1,6 @@
 #include <iostream>
 using namespace std;
 
-void imprimir(int x[][15])
-{
-    for(int i=0 ; i <15 ; i++)
-    {
-        for(int j=0 ; j<i+1 ; j++)
-            cout << x[i][j] <<' ';
-        cout << endl;
-    }
-}
-
 int mayor(int x[])
 {
     int max=0;
@@ -35,9 +25,6 @@ void caminos(int x[][15],int f)
             else 
                 x[i][j] += x[i-1][j];
         }
-
-    
-    imprimir(x);
     cout << "\nMAXIMO:" << mayor(x[14]) << endl;
 }
 
@@ -70,9 +57,4 @@ int main()
         }
 
     caminos(matrizPiramide,15);
-
-
-    
-
-
 }
