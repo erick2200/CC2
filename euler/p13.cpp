@@ -9,7 +9,7 @@ int main()
 {
     
     ifstream archivo;
-    string numero,aux;
+    string numero;
     int suma,acarreo=0;
     string resultado;
     for(int i=49;i>=0 ; i--)
@@ -20,8 +20,7 @@ int main()
         while(!archivo.eof())
         {
             getline(archivo,numero);
-            aux = numero.substr(i,1);
-            suma += atoi(aux.c_str());
+            suma += static_cast<int>(numero[i]-48);
         }
         ss << (suma%10);
         resultado += ss.str();
