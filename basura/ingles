@@ -1,16 +1,41 @@
-Readme$noun$noun$leame$A readme file, often named "READ ME" to get the user's attention, is a text file containing useful information about a software program. It often accompanies the program's installer or is installed with the program. A typical readme file contains instructions on how to install the program, how to use the basic functions of the program, and what the program does. It may also include a list of recent updates made to the program. Un archivo readme, a menudo llamado "README" para captar la atención del usuario, es un archivo de texto que contiene información útil sobre un programa de software. A menudo acompaña al instalador del programa o se instala con el programa. Un archivo readme típico contiene instrucciones sobre cómo instalar el programa, cómo usar las funciones básicas del programa y qué hace el programa.$
-Real-Time$verb$tiempo real$When an event or function is processed instantaneously, it is said to occur in real-time. To say something takes place in real-time is the same as saying it is happening "live" or "on-the-fly. Cuando un evento o función se procesa instantáneamente, se dice que ocurre en tiempo real. Decir que algo ocurre en tiempo real es lo mismo que decir que está sucediendo "en vivo" o "sobre la marcha".$
-Recursion$verb$recursion$Recursion is a process in which a function calls itself as a subroutine. This allows the function to be repeated several times, since it calls itself during its execution. La recursión es un proceso en el cual una función se llama a sí misma como una subrutina. Esto permite que la función se repita varias veces, ya que se llama a sí misma durante su ejecución.$
-Refresh$verb$refrescar$Refresh is a command that reloads the contents of a window or Web page with the most current data. Actualizar es un comando que vuelve a cargar el contenido de una ventana o página web con los datos más actuales$
-Registry$noun$registro$This is a database used by Microsoft Windows to store configuration information about the software installed on a computer. This information includes things like the desktop background, program settings, and file extension associations. Esta es una base de datos utilizada por Microsoft Windows para almacenar información de configuración sobre el software instalado en una computadora. Esta información incluye elementos como el fondo del escritorio, la configuración del programa y las asociaciones de extensión de archivo .$
-Remote Access$noun$acceso remoto$Remote access is just what it sounds like -- the ability to access your computer from a remote location. Programs like PC Anywhere (Windows), Remote Access (Mac), and Timbuktu (Windows and Mac) allow users to control remote computers from their local machine. El acceso remoto es exactamente lo que suena: la capacidad de acceder a su computadora desde una ubicación remota. Los programas como PC Anywhere (Windows), Acceso remoto (Mac) y Timbuktu (Windows y Mac) permiten a los usuarios controlar computadoras remotas desde su máquina local.$
-Resolution$noun$resolucion$This term can describe either how many pixels a monitor can display or how fine a printer can print. Este término puede describir cuántos píxeles puede mostrar un monitor o qué tan bien puede imprimir una impresora.$
-Restore$verb$restaurar$The word "restore" means to return something to its former condition. Therefore, when you restore a computer or other electronic device, you return it to a previous state. This may be a previous system backup or the original factory settings. La palabra "restaurar" significa devolver algo a su condición anterior. Por lo tanto, cuando restaura una computadora u otro dispositivo electrónico, lo regresa a un estado anterior. Esto puede ser una copia de seguridad del sistema anterior o la configuración original de fábrica.$
 
+Readme$noun$leame$A readme file, often named "READ ME" to get the user's attention, is a text file containing useful information about a software program. It often accompanies the program's installer or is installed with the program. A typical readme file contains instructions on how to install the program, how to use the basic functions of the program, and what the program does. It may also include a list of recent updates made to the program.$ $ \\
 
-Raster Images
- Retina display
- Routers
- 
- 
- https://www.techopedia.com/it-terms/r
+Real-Time$verb$tiempo real$When an event or function is processed instantaneously, it is said to occur in real-time. To say something takes place in real-time is the same as saying it is happening "live" or "on-the-fly.$ $ \\
+
+Recursion$verb$recursion$Recursion is a process in which a function calls itself as a subroutine. This allows the function to be repeated several times, since it calls itself during its execution. $ $ \\
+
+Refresh$verb$refrescar$Refresh is a command that reloads the contents of a window or Web page with the most current data. $ $ \\
+
+Registry$noun$registro$This is a database used by Microsoft Windows to store configuration information about the software installed on a computer. This information includes things like the desktop background, program settings, and file extension associations. $ $ \\
+
+Remote Access$noun$acceso remoto$Remote access is just what it sounds like -- the ability to access your computer from a remote location. Programs like PC Anywhere (Windows), Remote Access (Mac), and Timbuktu (Windows and Mac) allow users to control remote computers from their local machine.$ $ \\
+
+Resolution$noun$resolucion$This term can describe either how many pixels a monitor can display or how fine a printer can print. $ $ \\
+
+Restore$verb$restaurar$The word "restore" means to return something to its former condition. Therefore, when you restore a computer or other electronic device, you return it to a previous state. This may be a previous system backup or the original factory settings.$ $ \\
+
+Ransonwere $ Ransonwere $ noun $ it is a type of malware. It restricts access to the computer system that it infects or the data that it stores, and demands a ransom be paid to the creator(s) of the malware. $ $ \\
+
+Raspberry $ Raspberry $ noun $ it is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries $ $ \\
+
+Run $ correr $ verb $ means that a program will be run or executed $ $ \\
+
+Rizer $ rizer $ noun $ it is a technology brand focused mainly on the development of processors $ $ \\
+
+ROM $ ROM $ noun $ it is only a reading memory in which the basic system of a computer is stored $ $ \\
+
+root $ fundamental $ noun $ is the name given to a user $ $ \\
+
+Router $ enrutador $ noun $ A router[a] is a networking device that forwards data packets between computer networks. $ $ \\
+
+Resuable $ reutilizable $ noun $ code that can be used repeatedly $ $ \\
+
+Ram $ ram $ noun $ is the main memory of a computer and one of the fastest $ $ \\
+
+Root $ root $ verb $ is to obtain privileged permissions of a cell phone $ $ \\
+
+RGB $ RGB $ noun $ Red, green, and blue; the primary colors that are mixed to display the color of pixels on a computer monitor. Every color of emitted light can be created by combining these three colors in varying levels.  $ $\\
+
+RJ-45 $ rj-45 $ noun $ An eight-wire connector used for connecting a computer to a local-area network. May also be referred to as an Ethernet connector. $ $ \\
+
