@@ -16,13 +16,13 @@ int main()
     cin >> columns1;
     matriz1 = new int*[rows1];
     for(int i=0 ; i < rows1 ; i++)
-        matriz1[i] = new int[columns1];
+        *(matriz1+i) = new int[columns1];
     for(int i=0 ; i<rows1 ; i++)
         for(int j=0 ; j<columns1 ; j++ )
         {
             cout << "Digite un valor para [" << i << "][" << j << "]  " ;
             cin >> numero;
-            matriz1[i][j] = numero;
+            *(*(matriz1+i)+j) = numero;
         }
     imprimirMatriz(matriz1,rows1,columns1);
 
@@ -32,13 +32,13 @@ int main()
     cin >> columns2;
     matriz2 = new int*[rows2];
     for(int i=0 ; i < rows2 ; i++)
-        matriz2[i] = new int [columns2];
+        *(matriz2+i) = new int [columns2];
     for(int i=0 ; i<rows2 ; i++)
         for(int j=0 ; j < columns2 ; j++)
         {
             cout << "Digite un valor para [" << i << "][" << j << "]  " ;
             cin >> numero;
-            matriz2[i][j] = numero;
+            *(*(matriz2+i)+j) = numero;
         }
     imprimirMatriz(matriz2,rows2,columns2);
 
@@ -54,17 +54,17 @@ int main()
 
     //Liberacion de memoria Dinamica
     for(int i=0 ; i< rows1 ; i++)
-        delete[] matriz1[i];
+        delete[] *(matriz1+i);
     if(matriz1 != NULL ) delete [] matriz1;
 
     for(int i=0 ; i < rows2 ; i++ )
-        delete[] matriz2[i];
+        delete[] *(matriz2+i);
     if(matriz2 != NULL ) delete[] matriz2;
 
     if(matriz3 != NULL)
     {
         for(int i=0 ; i < rows1 ; i++)
-            delete[] matriz3[i];
+            delete[] *(matriz3+i);
         if(matriz3 != NULL) delete[] matriz3;
     }
     
@@ -74,11 +74,10 @@ int main()
 
 void imprimirMatriz(int** arr ,int rows,int columns)
 {
-    cout << endl;
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < columns; j++)
-            cout << arr[i][j] << '\t';
+            cout << *(*(arr+i)+j) << '\t';
         cout << endl;
     }
     cout << endl;
@@ -91,15 +90,15 @@ int** multiplicacionMatrices(int** arr1,int rows1,int columns1,int** arr2,int ro
     
     int** result = new int*[rows1];
     for (int i = 0; i < rows1; i++)
-        result[i] = new int[columns2];
+        *(result+i) = new int[columns2];
 
     int acum;
     for(int i=0 ; i<rows1 ; i++)
         for(int j=0 ; j<columns2 ; j++)
         {
-            result[i][j] = 0;
+            *(*(result+i)+j) = 0;
             for(int k=0 ; k<rows2 ; k++)
-                result[i][j] += arr1[i][k] * arr2[k][j];
+                *(*(result+i)+j) += *(*(arr1+i)+k) * *(*(arr2+k)+j);
         }
 
     return result;
