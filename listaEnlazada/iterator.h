@@ -14,8 +14,8 @@ class IteratorList
         IteratorList& operator++();
         IteratorList& operator=(Node<T>* o);
         bool operator!=(Node<T>* o); 
+        T operator*();
 
-        T* get();       
 };
 
 template<class T>
@@ -50,7 +50,9 @@ bool IteratorList<T>::operator!=(Node<T> *o)
 }
 
 template<class T>
-T* IteratorList<T>::get()
+T IteratorList<T>::operator*()
 {
-    return cursor->getDato();
+    return *(cursor->getDato());
 }
+
+

@@ -1,5 +1,7 @@
 #include "iterator.h"
 
+
+
 int main()
 
 {
@@ -10,8 +12,8 @@ int main()
     listanumeros.push_front(3);
 
     IteratorList<int> x;  
-    for(x=listanumeros.begin() ; x != listanumeros.end() ; x.next() )
-        std::cout << *(x.get()) << ' ';
+    for(x=listanumeros.begin() ; x != listanumeros.end() ; ++x )
+        std::cout << *x << ' ';
     std::cout << std::endl;    
 
 }
