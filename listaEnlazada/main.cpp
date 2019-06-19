@@ -1,16 +1,12 @@
 #include "pila.h"
 #include "cola.h"
 
-
-
 int main()
-
 {
     Pila<int> pila;
     pila.push(8);
     pila.push(9);
     pila.push(0);
-    
     while (!pila.isEmpty())
         std::cout << pila.pop() << ' ';
     std::cout << std::endl;
