@@ -1,17 +1,25 @@
-#include "iterator.h"
+#include "pila.h"
+#include "cola.h"
 
 int main()
 
 {
-    LinkedList<int> listanumeros;
-    listanumeros.push_back(0);
-    listanumeros.push_back(5);
-    listanumeros.add(4,0);
-    listanumeros.push_front(3);
+    Pila<int> pila;
+    pila.push(8);
+    pila.push(9);
+    pila.push(0);
+    
+    while (!pila.isEmpty())
+        std::cout << pila.pop() << ' ';
+    std::cout << std::endl;
 
-    IteratorList<int> x;  
-    for(x=listanumeros.begin() ; x != listanumeros.end() ; x.next() )
-        std::cout << *(x.get()) << ' ';
-    std::cout << std::endl;    
 
+    Cola<int> cola;
+    cola.put(8);
+    cola.put(0);
+    cola.put(12);
+    while (!cola.isEmpty())
+        std::cout << cola.pop() << ' ';        
+    std::cout << std::endl;
+    
 }

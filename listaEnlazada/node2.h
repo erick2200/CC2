@@ -1,5 +1,5 @@
-#ifndef NODE_H
-#define NODE_H
+#ifndef NODE2_H
+#define NODE2_H
 
 #include <iostream>
 

@@ -7,55 +7,30 @@
 template<class T>
 class LinkedList
 {
-    private:
-        Node<T> *head;
-        int size;
-    public:
+private:
+    Node<T> *head;
+    int size;
+public:
 
-        class Iterator
-        {
-            private:
-                Node<T>* ptr;
-            public:
-                Iterator(){}
-                bool operator!= (Node<T>*  o)
-                {
-                    bool igual = ptr == o;
-                    return !igual;
-                }
-                Iterator& operator =(Node<T>* begin) 
-                {
-                    ptr = begin;
-                    return *this;
-                }
-                Iterator& operator ++ ()
-                {
-                    ptr = ptr->getSiguiente();
-                    return *this; 
-                }
-                Node<T>* get() {return ptr;}
-        };
+    LinkedList();
+    ~LinkedList();
+    
+    void push_front(T);
+    void push_back(T);
+    void add(T,int);
 
-        LinkedList();
-        ~LinkedList();
-        
-        void push_front(T);
-        void push_back(T);
-        void add(T,int);
+    T* get_front();
+    T* get_back();
+    T* get(int);
 
-        T* get_front();
-        T* get_back();
-        T* get(int);
+    void remove_front();
+    void remove_back();
+    void remove(int);
 
-        void remove_front();
-        void remove_back();
-        void remove(int);
+    int getSize(){return size;}
 
-        int getSize(){return size;}
-
-        void mostrar();
-        Node<T>* begin() {return head;}
-        Node<T>* end() ;
+    Node<T>* begin() {return head;}
+    Node<T>* end() ;
 };
 
 
@@ -123,18 +98,19 @@ void LinkedList<T>::add(T dato,int n)
 template<class T>
 T* LinkedList<T>::get_front()
 {
-    if(size == 0) return nullptr;
+    if(head == nullptr) return nullptr;
     return head->getDato();
 }
 
 template<class T>
 T* LinkedList<T>::get_back()
 {
-    if(size == 0) return nullptr;
-    Node<T> ptr = head;
+    
+    if(size == 0 ) return nullptr;
+    Node<T>* ptr = head;
     while(ptr->getSiguiente()  != nullptr)
         ptr = ptr->getSiguiente();
-    return &(ptr->getDato());
+    return ptr->getDato();
 
 }
 
@@ -142,11 +118,11 @@ template<class T>
 T* LinkedList<T>::get(int n)
 {
     if(n>=size) return nullptr;
-    Node<T> ptr = head;
+    Node<T>* ptr = head;
     int count = 0;
     while(count < n)
         ptr = ptr->getSiguiente();
-    return &(ptr->getDato());
+    return ptr->getDato();
 
 }
 
@@ -199,18 +175,6 @@ void LinkedList<T>::remove(int n)
         delete eliminado;
         size--;
     }
-}
-
-template<class T>
-void LinkedList<T>::mostrar()
-{
-    Node<T>* ptr = head;
-    for(int i =0 ; i<size ; i++)
-    {
-        std::cout << ptr->getDato() << ' ';
-        ptr = ptr->getSiguiente();
-    }
-    std::cout << std::endl;
 }
 
 template<class T>
